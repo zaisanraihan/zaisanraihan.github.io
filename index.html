@@ -8,7 +8,69 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Place favicon.ico in the root directory -->
+      <!-- Place favicon.ic                              <div class="tp-home-3-author text-center mb-30 tilt-card" data-tilt>
+                              <div class="tp-home-2-author tp-home-author-shadow p-relative fix">
+                                 <img class="w-100 tp-round-4" src="assets/img/author/thumb-3.jpg" alt="">
+                                 <div class="author-overlay"></div>
+                              </div> the r                                          <div class="highlight-item">
+                                          <h4 class="highlight-title">Automated EMF Measurement System</h4>
+                                          <p>Developed an automated system for measuring spatial stray fields in inductive charging, reducing testing time by 65%.</p>
+                                       </div>
+                                    </div>
+                                    <div class="tp-skills-section tp-round-4 mb-25">
+                                       <h3 class="tp-home-2-title mb-20">Core Competencies</h3>
+                                       <div class="skills-container">
+                                          <div class="skill-item">
+                                             <div class="skill-header">
+                                                <h4>Hardware Design</h4>
+                                                <span>95%</span>
+                                             </div>
+                                             <div class="skill-bar">
+                                                <div class="skill-percentage" style="width: 95%"></div>
+                                             </div>
+                                          </div>
+                                          <div class="skill-item">
+                                             <div class="skill-header">
+                                                <h4>System Integration</h4>
+                                                <span>90%</span>
+                                             </div>
+                                             <div class="skill-bar">
+                                                <div class="skill-percentage" style="width: 90%"></div>
+                                             </div>
+                                          </div>
+                                          <div class="skill-item">
+                                             <div class="skill-header">
+                                                <h4>PCB Design</h4>
+                                                <span>92%</span>
+                                             </div>
+                                             <div class="skill-bar">
+                                                <div class="skill-percentage" style="width: 92%"></div>
+                                             </div>
+                                          </div>
+                                          <div class="skill-item">
+                                             <div class="skill-header">
+                                                <h4>RF Systems</h4>
+                                                <span>88%</span>
+                                             </div>
+                                             <div class="skill-bar">
+                                                <div class="skill-percentage" style="width: 88%"></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="skill-tags-cloud mt-30">
+                                          <span class="skill-tag">Altium Designer</span>
+                                          <span class="skill-tag">PCB Design</span>
+                                          <span class="skill-tag">MATLAB</span>
+                                          <span class="skill-tag">Embedded Systems</span>
+                                          <span class="skill-tag">RF Engineering</span>
+                                          <span class="skill-tag">CAD</span>
+                                          <span class="skill-tag">Circuit Design</span>
+                                          <span class="skill-tag">Signal Processing</span>
+                                          <span class="skill-tag">System Integration</span>
+                                          <span class="skill-tag">Hardware Testing</span>
+                                       </div>
+                                    </div>
+                                    <div class="row">rectory -->
       <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
 
       <!-- CSS here -->
@@ -18,10 +80,79 @@
       <link rel="stylesheet" href="assets/css/magnific-popup.css">
       <link rel="stylesheet" href="assets/css/spacing.css">
       <link rel="stylesheet" href="assets/css/main.css">
+      <style>
+         .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 12px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         }
+
+         .theme-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+         }
+
+         .theme-toggle svg {
+            width: 24px;
+            height: 24px;
+            fill: none;
+            stroke: var(--tp-common-white);
+            stroke-width: 2;
+            transition: all 0.3s ease;
+         }
+
+         body.light-mode {
+            background: #ffffff;
+         }
+
+         body.light-mode .tp-text-common-white {
+            color: #333333;
+         }
+
+         body.light-mode .tp-about-heiko {
+            background: #f5f5f5;
+            border: 1px solid #e0e0e0;
+         }
+
+         body.light-mode .theme-toggle {
+            background: rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+         }
+
+         body.light-mode .theme-toggle svg {
+            stroke: #333333;
+         }
+
+         .theme-toggle .sun-icon,
+         body.light-mode .theme-toggle .moon-icon {
+            display: none;
+         }
+
+         body.light-mode .theme-toggle .sun-icon,
+         .theme-toggle .moon-icon {
+            display: block;
+         }
+
+         /* Smooth transitions */
+         * {
+            transition: background-color 0.3s ease, 
+                      color 0.3s ease, 
+                      border-color 0.3s ease, 
+                      box-shadow 0.3s ease;
+         }
+      </style>
    </head>
 
    <body>
-
       <!-- Preloader Start -->
       <div class="preloader med-loading">
          <div class="loader"></div>
@@ -106,10 +237,10 @@
                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path
                                  d="M1 5.5715H6.33342C7.62867 5.5715 8.61917 6.56199 8.61917 7.85725C8.61917 9.15251 7.62867 10.143 6.33342 10.143H1.76192C1.30477 10.143 1 9.83823 1 9.38108V1.76192C1 1.30477 1.30477 1 1.76192 1H5.5715C6.86676 1 7.85725 1.99049 7.85725 3.28575C7.85725 4.58101 6.86676 5.5715 5.5715 5.5715H1Z"
-                                 stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                 stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
                               <path
                                  d="M10.9062 7.09454H17.0016C17.0016 5.41832 15.6301 4.04688 13.9539 4.04688C12.2777 4.04688 10.9062 5.41832 10.9062 7.09454ZM10.9062 7.09454C10.9062 8.77076 12.2777 10.1422 13.9539 10.1422H15.2492"
-                                 stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                 stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                                  stroke-linejoin="round" />
                               <path d="M16.1125 1.44434H11.668" stroke="currentColor" stroke-width="1.2"
                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -208,6 +339,7 @@
       </header>
 
       <main>
+         <div id="particles-js" class="particles-container"></div>
          
          <!-- tp-main-area-start -->
          <div class="tp-home-area tp-home-3-spacing tp-home-3-animate-tab">
@@ -265,14 +397,14 @@
                                     <span class="d-block">Research</span>
                                  </a>
                               </li>
-                              <!-- <li class="nav-tab-item" role="presentation">
+                              <li class="nav-tab-item" role="presentation">
                                  <a href="#contact" data-bs-toggle="tab">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path d="M22.9841 0.0393793L0.532967 7.37555C-0.101085 7.58274 -0.192776 8.44518 0.384277 8.78069L8.86879 13.7143C9.13646 13.8699 9.471 13.8512 9.71951 13.6666L12.1046 11.8954L10.3333 14.2804C10.1488 14.529 10.13 14.8636 10.2856 15.1312L15.2192 23.6157C15.5551 24.1932 16.4174 24.1005 16.6244 23.467L23.9606 1.01581C24.1574 0.412969 23.584 -0.156778 22.9841 0.0393793ZM15.6892 21.3437L11.8806 14.7939L16.4731 8.60988C16.7019 8.30166 16.6704 7.87233 16.3989 7.60089C16.1275 7.32944 15.6981 7.29789 15.3899 7.52676L9.20594 12.1193L2.6562 8.31066L22.0149 1.98499L15.6892 21.3437ZM8.12843 16.9663L2.98798 22.1067C2.68567 22.409 2.19547 22.409 1.89315 22.1067C1.59079 21.8044 1.59079 21.3142 1.89315 21.0118L7.0336 15.8714C7.33601 15.5692 7.82621 15.5691 8.12843 15.8714C8.4308 16.1738 8.4308 16.664 8.12843 16.9663ZM1.33748 17.1608C1.03512 16.8584 1.03512 16.3683 1.33748 16.066L3.36583 14.0376C3.66815 13.7352 4.15835 13.7352 4.46066 14.0376C4.76303 14.3399 4.76303 14.8301 4.46066 15.1324L2.43232 17.1608C2.13005 17.4631 1.6398 17.4631 1.33748 17.1608ZM9.96231 19.5392C10.2647 19.8415 10.2647 20.3317 9.96231 20.634L7.93392 22.6623C7.78276 22.8136 7.58462 22.8891 7.38653 22.8891C6.70298 22.8891 6.35005 22.0566 6.83913 21.5675L8.86753 19.5392C9.1698 19.2368 9.66 19.2368 9.96231 19.5392Z" fill="currentColor" />
                                     </svg>
                                     <span class="d-block">Contact</span>
                                  </a>
-                              </li> -->
+                              </li>
                            </ul>
                         </div>
                      </div>
@@ -321,11 +453,26 @@
                                        <h2 class="tp-home-author-title fw-500 tp-text-common-white mb-30">Know about me</h2>
                                        <p class="fw-500 mb-25">Hardware Development Engineer with a Master’s degree in Electrical Communication Engineering from the University of Kassel and over five years of
                                            experience in the research and manufacturing industry. Skilled in designing analog, digital, and high-frequency modules, with a strong focus on system integration, validation, and error analysis.</p>
-                                       <p class="fw-500">Currently contributing at <span>Yunex Traffic (Siemens ITS)</span> , with responsibilities ranging from development
+                                       <p class="fw-500">Currently contributing at <span>Yunex Traffic (Siemens ITS)</span>, with responsibilities ranging from development
                                            to commissioning of complex hardware systems. Known for a 
                                            collaborative work ethic—consulting closely with cross-functional 
                                            teams to deliver solutions that meet real-world demands.
                                            <br> Each project is approached with innovation, reliability, and teamwork in mind.</p>
+                                    </div>
+                                    <div class="tp-about-highlight tp-round-4 mb-25">
+                                       <h3 class="tp-home-2-title mb-20">Project Highlights</h3>
+                                       <div class="highlight-item mb-15">
+                                          <h4 class="highlight-title">Traffic Control System Architecture</h4>
+                                          <p>Led the development of next-generation traffic control hardware systems, improving urban traffic flow efficiency by 30%.</p>
+                                       </div>
+                                       <div class="highlight-item mb-15">
+                                          <h4 class="highlight-title">Wireless Power Transfer System</h4>
+                                          <p>Designed and implemented a bidirectional wireless inductive energy transfer system for electric vehicles, achieving 92% transfer efficiency.</p>
+                                       </div>
+                                       <div class="highlight-item">
+                                          <h4 class="highlight-title">Automated EMF Measurement System</h4>
+                                          <p>Developed an automated system for measuring spatial stray fields in inductive charging, reducing testing time by 65%.</p>
+                                       </div>
                                     </div>
                                     <div class="row">
                                        <div class="col-xl-6 col-lg-6 mb-25 ">
@@ -389,12 +536,22 @@
                                           <div class="tp-home-2-expreance-wrap mb-25">
                                              <h3 class="tp-home-2-title mb-10">Work experience</h3>
                                              <span class="tp-home-2-border mb-30"></span>
-                                             <div class="tp-home-2-expreance-item mb-25 d-flex">
-                                                <span class="tp-home-expreance-2-year mr-40">2024 - NOW</span>
-                                                <span class="tp-home-2-expreance-icon mr-15"><img src="assets/img/expreance/yunextraffic_logo.jpeg" alt=""></span>
-                                                <div class="tp-home-2-expreance-content">
-                                                   <h6 class="tp-home-2-title mb-0">YUNEX TRAFFIC</h6>
-                                                   <span class="tp-home-2-expreance-subtitle">SYSTEM ARCHITECT</span>
+                                             <div class="timeline-item current mb-25">
+                                                <div class="timeline-dot"></div>
+                                                <div class="timeline-content">
+                                                    <div class="timeline-header d-flex align-items-center">
+                                                        <span class="timeline-year">2024 - NOW</span>
+                                                        <span class="timeline-company-icon"><img src="assets/img/expreance/yunextraffic_logo.jpeg" alt=""></span>
+                                                    </div>
+                                                    <div class="timeline-details">
+                                                        <h6 class="company-name">YUNEX TRAFFIC</h6>
+                                                        <span class="position">SYSTEM ARCHITECT</span>
+                                                        <ul class="achievements">
+                                                            <li>Leading system architecture for next-gen traffic control systems</li>
+                                                            <li>Optimizing hardware integration and performance</li>
+                                                            <li>Directing cross-functional engineering teams</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                              </div>
                                              <div class="tp-home-2-expreance-item mb-25 d-flex">
@@ -459,7 +616,7 @@
                                                                <path d="M6.8667 1L11 5.00003L6.8667 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                                                                <path d="M1 4.99902H11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                                                             </svg>
-                                                         </span>
+                                                                                                                 </span>
                                                       </a>
                                                    </div>
                                                 </div>
@@ -664,49 +821,32 @@
                                     </div>
                                  </div>
                               </div>
-                              <!-- <div class="tab-pane" id="contact" role="tabpanel">
-                                 <div class="tp-contact-form-wrap tp-contact-form-main-wrap">
-                                    <h3 class="tp-contact-form-main-title mb-40">Let’s work with <span>together 👋</span></h3>
-                                    <form id="contact-form" action="assets/mail.php" method="POST">
-                                       <div class="tp-contact-form-input">
-                                          <div class="row">
-                                             <div class="col-md-6">
-                                                <div class="mb-15">
-                                                   <input name="name" class="input" type="text" placeholder="First name*">
+                              <div class="tab-pane" id="contact" role="tabpanel">
+                                 <div class="tp-tab-3-wrap">
+                                    <div class="tp-about-heiko tp-round-4 mb-25">
+                                       <h2 class="tp-home-author-title fw-500 tp-text-common-white mb-30">Contact Me</h2>
+                                       <div class="contact-form">
+                                          <form id="contact-form" action="https://formspree.io/f/zaisan.raihan@email.com" method="POST">
+                                             <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                   <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                   <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                   <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                   <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                                                </div>
+                                                <div class="col-md-12">
+                                                   <button type="submit" class="tp-btn-2 w-100">Send Message</button>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6">
-                                                <div class="mb-15">
-                                                   <input name="l_name" class="input" type="text" placeholder="Last name*">
-                                                </div>
-                                             </div>
-                                             <div class="col-md-6">
-                                                <div class="mb-15">
-                                                   <input name="email" class="input" type="email" placeholder="heiko@mail.com">
-                                                </div>
-                                             </div>
-                                             <div class="col-md-6">
-                                                <div class="mb-15">
-                                                   <input name="phone" class="input" type="text" placeholder="Phone number">
-                                                </div>
-                                             </div>
-                                             <div class="col-12">
-                                                <div class="mb-15">
-                                                   <input  name="subject" class="input" type="text" placeholder="Enter subject">
-                                                </div>
-                                             </div>
-                                             <div class="col-12">
-                                                <div class="mb-15 lh-1">
-                                                   <textarea  name="message" class="input textarea" placeholder="Write your message"></textarea>
-                                                </div>
-                                             </div>
-                                             <div class="col-12">
-                                                <button type="submit" class="tp-contact-form-btn">Send message</button>
-                                                <p class="ajax-response mt-20"></p>
-                                             </div> -->
-                                          <!-- </div> -->
+                                          </form>
                                        </div>
-                                    </form>
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -727,7 +867,32 @@
       <script src="assets/js/swiper-bundle.js"></script>
       <script src="assets/js/ajax-form.js"></script>
       <script src="assets/js/magnific-popup.js"></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
       <script src="assets/js/main.js"></script>
+      <script>
+         // Theme switching functionality
+         document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.querySelector('.theme-toggle');
+            const body = document.body;
+            
+            // Check for saved theme preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+               body.classList.add(savedTheme);
+            }
+
+            themeToggle.addEventListener('click', () => {
+               if (body.classList.contains('light-mode')) {
+                  body.classList.remove('light-mode');
+                  localStorage.setItem('theme', '');
+               } else {
+                  body.classList.add('light-mode');
+                  localStorage.setItem('theme', 'light-mode');
+               }
+            });
+         });
+      </script>
    </body>
 
 </html>

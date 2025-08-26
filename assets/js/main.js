@@ -18,8 +18,84 @@
 	var windowOn = $(window);
 	////////////////////////////////////////////////////
 	// 01. PreLoader Js
+	// Scroll animation function
+	function animateOnScroll() {
+		$('.timeline-item, .tp-home-2-project-wrap').each(function() {
+			const elementTop = $(this).offset().top;
+			const elementBottom = elementTop + $(this).outerHeight();
+			const viewportTop = $(window).scrollTop();
+			const viewportBottom = viewportTop + $(window).height();
+			
+			if (elementBottom > viewportTop && elementTop < viewportBottom) {
+				$(this).addClass('fade-in-up');
+			}
+		});
+	}
+
+	$(window).on('load scroll', function() {
+		animateOnScroll();
+	});
+
+	// Handle image loading
+	function handleImageLoading() {
+		$('img').each(function() {
+			if (this.complete) {
+				$(this).addClass('loaded');
+			} else {
+				$(this).on('load', function() {
+					$(this).addClass('loaded');
+				});
+			}
+		});
+	}
+
+	// Animate skill tags
+	function animateSkillTags() {
+		$('.skill-tag').each(function(index) {
+			$(this).css({
+				'animation': `fadeInUp 0.5s ease forwards ${index * 0.1}s`,
+				'opacity': '0',
+				'transform': 'translateY(20px)'
+			});
+		});
+	}
+
+	// Initialize tilt effect
+	function initTiltEffect() {
+		VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+			max: 3,
+			speed: 600,
+			glare: false,
+			scale: 1.02,
+			gyroscope: false
+		});
+	}
+
 	$(window).on('load', function () {
+		handleImageLoading();
+		initTiltEffect();
+		animateSkillTags();
 		$(".preloader").fadeOut(500);
+		
+		// Animate elements on page load
+		setTimeout(function() {
+			$('.tp-home-3-author').addClass('fade-in-up');
+			setTimeout(function() {
+				$('.tp-about-heiko').addClass('fade-in-up');
+			}, 200);
+			setTimeout(function() {
+				$('.tp-about-highlight').addClass('fade-in-up');
+			}, 400);
+			setTimeout(function() {
+				$('.tp-skills-section').addClass('fade-in-up');
+				// Animate skill bars after they appear
+				setTimeout(function() {
+					$('.skill-percentage').each(function() {
+						$(this).css('width', $(this).parent().prev().find('span').text());
+					});
+				}, 600);
+			}, 600);
+		}, 600);
 	});
   
 	////////////////////////////////////////////////////
@@ -203,5 +279,69 @@
 	});
 
 
+
+	// Initialize particles.js
+	if(typeof particlesJS !== 'undefined') {
+		particlesJS("particles-js", {
+			"particles": {
+				"number": {
+					"value": 50,
+					"density": {
+						"enable": true,
+						"value_area": 800
+					}
+				},
+				"color": {
+					"value": "#666666"
+				},
+				"shape": {
+					"type": "circle"
+				},
+				"opacity": {
+					"value": 0.2,
+					"random": true
+				},
+				"size": {
+					"value": 3,
+					"random": true
+				},
+				"line_linked": {
+					"enable": true,
+					"distance": 150,
+					"color": "#3b82f6",
+					"opacity": 0.1,
+					"width": 1
+				},
+				"move": {
+					"enable": true,
+					"speed": 2,
+					"direction": "none",
+					"random": true,
+					"straight": false,
+					"out_mode": "out",
+					"bounce": false
+				}
+			},
+			"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+					"onhover": {
+						"enable": true,
+						"mode": "grab"
+					},
+					"resize": true
+				},
+				"modes": {
+					"grab": {
+						"distance": 140,
+						"line_linked": {
+							"opacity": 0.3
+						}
+					}
+				}
+			},
+			"retina_detect": true
+		});
+	}
 
 })(jQuery);
